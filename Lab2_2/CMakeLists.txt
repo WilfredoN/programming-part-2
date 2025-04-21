@@ -9,3 +9,5 @@ add_subdirectory(lib)
 
 add_executable(main_exec main.cpp)
 target_link_libraries(main_exec PRIVATE math_utils)
+
+add_compile_options(-Wall -Wextra -Wpedantic)
