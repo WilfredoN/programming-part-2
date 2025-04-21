@@ -1,7 +1,4 @@
-cmake_minimum_required(VERSION 3.12)
+add_library(math_utils INTERFACE)
 
-project(MathUtilsLib)
-
-add_library(math_utils private/math_utils.cpp)
-
-target_include_directories(math_utils PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/public)
+target_include_directories(math_utils
+                           INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/public)
